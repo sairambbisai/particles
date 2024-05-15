@@ -1,0 +1,126 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Calculator</title>
+
+    <style>
+      body {
+        background: url("https://www.mkgifs.com/wp-content/uploads/2022/05/minion-download-gif-1.gif") no-repeat, 
+        url("https://i.pinimg.com/originals/aa/03/98/aa0398c4d16b922837c7ed93db3525fe.gif") top right no-repeat,
+        url("https://j.gifs.com/ywx68g.gif") bottom left no-repeat,
+        url("https://i.pinimg.com/originals/55/de/06/55de068a005a71c0720cb64c3c6be828.gif") bottom right no-repeat; 
+        whitesmoke; 
+        width: 100%; 
+        
+      }
+      h1 {
+        background-color: rgb(20, 20, 8);
+        width: 300px;
+        margin: auto;
+        border: 3px solid rgb(41, 41, 43);
+        border-radius: 2px;
+        padding: 20px;
+        text-align: center;
+        color: yellow;
+        font-family: "Geneva",  sans-serif;
+        font-family: "Caveat";
+      }
+
+      #clear {
+        width: 270px;
+        border: 3px solid rgb(44, 44, 46);
+        border-radius: 3px;
+        padding: 20px;
+      }
+
+      .formstyle {
+        background-color: black;
+        width: 300px;
+        height: 500px;
+        margin: auto;
+        border: 3px solid rgb(41, 41, 43);
+        border-radius: 2px;
+        padding: 20px;
+      }
+
+      input {
+        background-color: darkblue;
+        width: 50px;
+        background: transparent;
+        color: white;
+        border: 3px solid rgb(24, 21, 21);
+        border-radius: 5px;
+        padding: 15px;
+        margin: 7px;
+        font-size: 20px;
+      }
+      input:hover {
+       background-color: rgb(117, 119, 5);
+      }
+
+      #calc {
+        width: 250px;
+        border: 2px solid wheat;
+        border-radius: 3px;
+        padding: 20px;
+        margin: auto;
+      }
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Agdasima:wght@700&family=Caveat&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <h1>Calculator</h1>
+    <div class="formstyle">
+      <form name="form1">
+        <input id="calc" type="text" name="answer" /> <br />
+        <br />
+
+        <input type="button" value="7" onclick="form1.answer.value += '7' " />
+        <input type="button" value="8" onclick="form1.answer.value += '8' " />
+        <input type="button" value="9" onclick="form1.answer.value += '9' " />
+        <input type="button" value="+" onclick="form1.answer.value += '+' " />
+        <br />
+        <br />
+
+        <input type="button" value="4" onclick="form1.answer.value += '4' " />
+        <input type="button" value="5" onclick="form1.answer.value += '5' " />
+        <input type="button" value="6" onclick="form1.answer.value += '6' " />
+        <input type="button" value="-" onclick="form1.answer.value += '-' " />
+        <br />
+        <br />
+
+        <input type="button" value="1" onclick="form1.answer.value += '1' " />
+        <input type="button" value="2" onclick="form1.answer.value += '2' " />
+        <input type="button" value="3" onclick="form1.answer.value += '3' " />
+        <input type="button" value="*" onclick="form1.answer.value += '*' " />
+        <br />
+        <br />
+
+        <input type="button" value="0" onclick="form1.answer.value += '0' " />
+        <input type="button" value="/" onclick="form1.answer.value += '/' " />
+        <input type="button" value="." onclick="form1.answer.value += '.' " />
+        
+        <input
+          type="button"
+          value="="
+          onclick="form1.answer.value = eval(form1.answer.value) "
+        />
+        <br />
+        
+        <input
+          type="button"
+          value="Clear All"
+          onclick="form1.answer.value = ' ' "
+          id="clear"
+        />
+        <br />
+      </form>
+    </div>
+  </body>
+</html>
